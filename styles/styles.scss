@@ -23,7 +23,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /*----------------Variables----------------*/
 $xs : 767px;
 $sm : 992px;
-
+$light-grey: #F2F2F2;
 
 /*----------------General styles----------------*/
 
@@ -124,7 +124,7 @@ header {
 
 /*----------------Specials styles----------------*/
 .specials {
-	background: grey;
+	background: $light-grey;
 	h2 {
 		position: relative;
 		top: -15px;
@@ -137,7 +137,7 @@ header {
 	}
 }
 .specials-container {
-	padding: 30px 20px;
+	padding: 30px 40px;
 }
 .specials-background {
 	
@@ -151,11 +151,63 @@ header {
 	}
 
 }
+.cutlery {
+	position: relative;
+	top: 30px;
+	right: 15px;
+	margin: auto;
+}
+/*----------------Reservations styles----------------*/
 
+.reservations {
+	background: url(../assets/header-background.jpg);
+	color: white;
+	padding: 30px;
+	input {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+}
 
+/*----------------Services styles----------------*/
 
-
-
+.services {
+	background: $light-grey;
+	p {
+		width: 75%;
+		margin: auto;
+	}
+}
+.service-group {
+	padding: 30px 0;
+	margin-bottom: 30px;
+}
+.service-img {
+	position:absolute;
+	top: -13px;
+	width: 85%;
+}
+.service-text {
+	background: white;
+	margin-top: 50px;
+	height: 120px;
+	h4 {
+		position: absolute;
+		bottom: 0;
+		width: 80%;
+	}
+}
+.service-bot {
+	@media (max-width: $xs) {
+	margin-top: 100px;	
+	}
+}
+.service-img-bot {
+	@media (max-width: $xs){
+		top: 35px;
+	}
+}
 
 
 

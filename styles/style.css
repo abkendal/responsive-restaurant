@@ -216,7 +216,7 @@ header {
 
 /*----------------Specials styles----------------*/
 .specials {
-  background: grey; }
+  background: #F2F2F2; }
   .specials h2 {
     position: relative;
     top: -15px; }
@@ -226,7 +226,7 @@ header {
     list-style: none; }
 
 .specials-container {
-  padding: 30px 20px; }
+  padding: 30px 40px; }
 
 .specials-background {
   min-height: 400px;
@@ -237,3 +237,52 @@ header {
       background-position: center top;
       min-height: 600px;
       background-size: contain; } }
+
+.cutlery {
+  position: relative;
+  top: 30px;
+  right: 15px;
+  margin: auto; }
+
+/*----------------Reservations styles----------------*/
+.reservations {
+  background: url(../assets/header-background.jpg);
+  color: white;
+  padding: 30px; }
+  .reservations input {
+    display: block;
+    width: 100%;
+    margin-top: 20px; }
+
+/*----------------Services styles----------------*/
+.services {
+  background: #F2F2F2; }
+  .services p {
+    width: 75%;
+    margin: auto; }
+
+.service-group {
+  padding: 30px 0;
+  margin-bottom: 30px; }
+
+.service-img {
+  position: absolute;
+  top: -13px;
+  width: 85%; }
+
+.service-text {
+  background: white;
+  margin-top: 50px;
+  height: 120px; }
+  .service-text h4 {
+    position: absolute;
+    bottom: 0;
+    width: 80%; }
+
+@media (max-width: 767px) {
+  .service-bot {
+    margin-top: 100px; } }
+
+@media (max-width: 767px) {
+  .service-img-bot {
+    top: 35px; } }
