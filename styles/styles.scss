@@ -12,5 +12,154 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 *, *:before, *:after {
 	box-sizing:border-box;
 } 
+.left {
+	float: left;
+}
+.right{
+	float: right;
+}
 /* End of setup styles */
+
+/*----------------Variables----------------*/
+$xs : 767px;
+$sm : 992px;
+
+
+/*----------------General styles----------------*/
+
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1,h2  {
+	font-family: 'Aguafina Script', cursive;
+}
+h2 {
+	font-size: 48px;
+}
+.container { 
+	@media (min-width: $sm){
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+
+/*----------------Header styles----------------*/
+header {
+	position: absolute;
+	width: 100%;
+}
+
+#header-top {
+	background: black;
+	color: white; 
+	padding: 14px 0;
+}
+#header-bottom {
+	padding: 20px 0;
+	background:rgba(34, 34, 34, 0.741176);
+	color: white;
+	a {
+		color: white;
+	}
+}
+
+
+/*----------------Jumbotron styles----------------*/
+.jumbotron {
+	margin-bottom: 0;
+	color: white;
+	background: url(../assets/home/restaurant-hero-bg.jpg) no-repeat center;
+	padding: 40vh 0 15vh 0;
+	height: 100vh;
+	h1 {
+		font-size: 72px;
+	}
+	h3::before {
+		content:" ";
+		width: 25px;
+		height:1px;
+		background: white;
+		display: inline-block;
+		margin-right: 20px;
+		position: relative;
+		bottom: 7px;
+	}
+	h3::after {
+		content:" ";
+		width: 25px;
+		height:1px;
+		background: white;
+		display: inline-block;
+		margin-left: 20px;
+		position: relative;
+		bottom: 7px;
+	}
+}
+
+/*----------------About styles----------------*/
+
+.about-section {
+	@media (max-width: $xs){
+		padding: 60px;
+	}
+	padding: 60px 0;
+} 
+.about-text{
+	@media (min-width: $xs){
+		padding-right: 45px;
+	}
+}
+.about-img {
+	@media (min-width: $xs){
+		padding-left: 45px;
+	}
+	img {
+		margin: auto;
+		// max-width: 350px;
+	}
+}
+
+/*----------------Specials styles----------------*/
+.specials {
+	background: grey;
+	h2 {
+		position: relative;
+		top: -15px;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+}
+.specials-container {
+	padding: 30px 20px;
+}
+.specials-background {
+	
+	min-height:400px; 
+	padding: 0 7%;
+	@media (min-width:$xs){
+		background: url(../assets/home/specials-border.png) no-repeat;
+		background-position: center top;
+		min-height: 600px;
+		background-size: contain;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 

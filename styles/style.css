@@ -128,4 +128,112 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 /* End of setup styles */
+/*----------------Variables----------------*/
+/*----------------General styles----------------*/
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1, h2 {
+  font-family: 'Aguafina Script', cursive; }
+
+h2 {
+  font-size: 48px; }
+
+@media (min-width: 992px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px; } }
+
+/*----------------Header styles----------------*/
+header {
+  position: absolute;
+  width: 100%; }
+
+#header-top {
+  background: black;
+  color: white;
+  padding: 14px 0; }
+
+#header-bottom {
+  padding: 20px 0;
+  background: rgba(34, 34, 34, 0.741176);
+  color: white; }
+  #header-bottom a {
+    color: white; }
+
+/*----------------Jumbotron styles----------------*/
+.jumbotron {
+  margin-bottom: 0;
+  color: white;
+  background: url(../assets/home/restaurant-hero-bg.jpg) no-repeat center;
+  padding: 40vh 0 15vh 0;
+  height: 100vh; }
+  .jumbotron h1 {
+    font-size: 72px; }
+  .jumbotron h3::before {
+    content: " ";
+    width: 25px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    bottom: 7px; }
+  .jumbotron h3::after {
+    content: " ";
+    width: 25px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    bottom: 7px; }
+
+/*----------------About styles----------------*/
+.about-section {
+  padding: 60px 0; }
+  @media (max-width: 767px) {
+    .about-section {
+      padding: 60px; } }
+
+@media (min-width: 767px) {
+  .about-text {
+    padding-right: 45px; } }
+
+@media (min-width: 767px) {
+  .about-img {
+    padding-left: 45px; } }
+
+.about-img img {
+  margin: auto; }
+
+/*----------------Specials styles----------------*/
+.specials {
+  background: grey; }
+  .specials h2 {
+    position: relative;
+    top: -15px; }
+  .specials ul {
+    padding: 0; }
+  .specials li {
+    list-style: none; }
+
+.specials-container {
+  padding: 30px 20px; }
+
+.specials-background {
+  min-height: 400px;
+  padding: 0 7%; }
+  @media (min-width: 767px) {
+    .specials-background {
+      background: url(../assets/home/specials-border.png) no-repeat;
+      background-position: center top;
+      min-height: 600px;
+      background-size: contain; } }
