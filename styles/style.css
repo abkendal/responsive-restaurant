@@ -254,9 +254,14 @@ header {
     width: 100%;
     margin-top: 20px; }
 
+@media (max-width: 767px) {
+  .reservations-container {
+    max-width: 400px; } }
+
 /*----------------Services styles----------------*/
 .services {
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  padding-top: 30px; }
   .services p {
     width: 75%;
     margin: auto; }
@@ -286,3 +291,69 @@ header {
 @media (max-width: 767px) {
   .service-img-bot {
     top: 35px; } }
+
+/*----------------Welcome styles----------------*/
+.welcome {
+  padding: 50px;
+  background: url(../assets/header-background.jpg);
+  color: white; }
+  .welcome p {
+    width: 75%;
+    margin: auto; }
+
+/*----------------Footer styles----------------*/
+.footer-top {
+  padding: 20px;
+  background: #242424;
+  color: #727272; }
+  .footer-top h4 {
+    color: white;
+    margin-bottom: 20px; }
+  .footer-top ul {
+    padding: 0; }
+  .footer-top li {
+    list-style: none; }
+
+.submit-btn {
+  background: #F5383A;
+  border: none;
+  color: white; }
+
+.footer-address ul {
+  padding-left: 20px; }
+
+.footer-location::before {
+  content: url(../assets/footer/icon-footerPin.png);
+  display: inline;
+  position: absolute;
+  left: 10px; }
+
+.footer-phone::before {
+  content: url(../assets/footer/icon-footerPhone.png);
+  display: inline;
+  position: absolute;
+  left: 10px; }
+
+.footer-email::before {
+  content: url(../assets/footer/icon-footerEmail.png);
+  display: inline;
+  position: absolute;
+  left: 10px; }
+
+.footer-bot {
+  color: white;
+  padding: 30px;
+  background: #1B1B1B; }
+
+.circle-background {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: #242424;
+  border-radius: 50%;
+  margin: 20px; }
+  .circle-background i {
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+    left: 0px; }
