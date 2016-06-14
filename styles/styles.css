@@ -1,3 +1,4 @@
+/*-----------------Partials----------------*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -173,6 +174,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 /* End of setup styles */
 /*----------------Variables----------------*/
+.menu .jumbotron {
+  background: url(../assets/header-background.jpg);
+  color: white;
+  padding: 30px;
+  height: 300px;
+}
+
 /*----------------General styles----------------*/
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -190,6 +198,28 @@ h2 {
   .container {
     padding-left: 120px;
     padding-right: 120px;
+  }
+}
+
+.table {
+  display: table;
+}
+
+@media (min-width: 767px) {
+  .d-table {
+    display: table;
+  }
+}
+
+.valign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (min-width: 767px) {
+  .d-valign {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -309,7 +339,13 @@ header {
 }
 
 .jumbotron h1 {
-  font-size: 72px;
+  font-size: 50px;
+}
+
+@media (min-width: 767px) {
+  .jumbotron h1 {
+    font-size: 72px;
+  }
 }
 
 .jumbotron h3::before {
@@ -336,12 +372,13 @@ header {
 
 /*----------------About styles----------------*/
 .about-section {
-  padding: 60px 0;
+  padding: 45px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .about-section {
-    padding: 60px;
+    padding: 60px 0;
+    width: 50%;
   }
 }
 
@@ -351,14 +388,31 @@ header {
   }
 }
 
+.about-text img {
+  max-width: 100%;
+}
+
+.about-img {
+  padding-top: 0;
+}
+
 @media (min-width: 767px) {
   .about-img {
+    padding-top: 60px;
     padding-left: 45px;
   }
 }
 
 .about-img img {
+  max-width: 100%;
   margin: auto;
+  width: 150px;
+}
+
+@media (min-width: 767px) {
+  .about-img img {
+    width: 350px;
+  }
 }
 
 /*----------------Specials styles----------------*/
@@ -373,7 +427,7 @@ header {
 
 @media (min-width: 767px) {
   .specials h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -446,7 +500,7 @@ header {
 @media (min-width: 767px) {
   .all-menu {
     position: relative;
-    top: 35px;
+    top: 40px;
   }
 }
 
