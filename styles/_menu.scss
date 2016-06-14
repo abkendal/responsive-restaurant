@@ -47,9 +47,7 @@
 			color: grey;
 			position: relative;
 			top: 4px;
-			@media (min-width: $xs){
-				top: 5px;
-			}
+			
 		}
 		.price {
 			float: right;

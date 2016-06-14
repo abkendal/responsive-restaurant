@@ -290,12 +290,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   top: 4px;
 }
 
-@media (min-width: 767px) {
-  .menu .menu-section .ingredients {
-    top: 5px;
-  }
-}
-
 .menu .menu-section .price {
   float: right;
 }
@@ -312,6 +306,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .menu .gallery-section .gallery-item img {
+  width: 100%;
+}
+
+.events .event .inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .events .event .inner {
+    width: 60%;
+  }
+}
+
+.events .event .event-img {
   width: 100%;
 }
 
