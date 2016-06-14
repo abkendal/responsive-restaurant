@@ -174,11 +174,145 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 /* End of setup styles */
 /*----------------Variables----------------*/
-.menu .jumbotron {
+.module-padding {
+  padding: 45px 20px;
+}
+
+@media (min-width: 767px) {
+  .module-padding {
+    padding: 60px 20px;
+  }
+}
+
+.module-padding-top {
+  padding: 45px 20px 0;
+}
+
+@media (min-width: 767px) {
+  .module-padding-top {
+    padding: 60px 20px 0;
+  }
+}
+
+.module-padding-bottom {
+  padding: 45px 20px 0;
+}
+
+@media (min-width: 767px) {
+  .module-padding-bottom {
+    padding: 60px 20px 0;
+  }
+}
+
+.secondary-jumbotron {
   background: url(../assets/header-background.jpg);
   color: white;
-  padding: 30px;
-  height: 300px;
+  background-size: contain;
+  padding-top: 200px;
+  height: 375px;
+}
+
+@media (min-width: 767px) {
+  .secondary-jumbotron {
+    padding: 165px 0;
+    height: 330px;
+  }
+}
+
+.menu .menu-section {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section {
+    text-align: left;
+  }
+}
+
+.menu .menu-section h3 {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section h3 {
+    text-align: left;
+  }
+}
+
+.menu .menu-section.module-padding {
+  padding: 45px 20px;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section.module-padding {
+    padding: 40px 20px;
+  }
+}
+
+.menu .menu-section .d-table {
+  width: 100%;
+  display: table;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section .d-valign {
+    width: 33%;
+  }
+}
+
+.menu .menu-section .menu-item {
+  padding: 10px 0;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section .menu-item {
+    padding: 10px 25px 10px 0;
+  }
+}
+
+.menu .menu-section .menu-item p {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section .menu-item p {
+    max-width: auto;
+  }
+}
+
+.menu .menu-section .ingredients {
+  float: left;
+  font-size: 70%;
+  color: grey;
+  position: relative;
+  top: 4px;
+}
+
+@media (min-width: 767px) {
+  .menu .menu-section .ingredients {
+    top: 5px;
+  }
+}
+
+.menu .menu-section .price {
+  float: right;
+}
+
+.menu .gallery-section .gallery-item {
+  width: 50%;
+  display: inline-block;
+}
+
+@media (min-width: 767px) {
+  .menu .gallery-section .gallery-item {
+    width: 25%;
+  }
+}
+
+.menu .gallery-section .gallery-item img {
+  width: 100%;
 }
 
 /*----------------General styles----------------*/
@@ -657,8 +791,14 @@ header {
   height: 42px;
   background: #242424;
   border-radius: 50%;
-  margin: 20px;
+  margin: 20px 10px;
   transition: all 0.5s ease;
+}
+
+@media (min-width: 767px) {
+  .circle-background {
+    margin: 20px;
+  }
 }
 
 .circle-background:hover {

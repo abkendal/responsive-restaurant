@@ -1,8 +1,89 @@
 .menu {
-	.jumbotron {
-		background: url(../assets/header-background.jpg);
-		color: white;
-		padding: 30px;
-		height: 300px;
+	.menu-section {
+
+		text-align: center;
+		@media (min-width: $xs){
+			text-align: left;
+		}
+		h3 {
+			text-align: center;
+			@media (min-width: $xs){
+				text-align: left;
+			}
+		}
+		&.module-padding{
+			padding: 45px 20px;
+			@media (min-width: $xs){
+				padding: 40px 20px;
+			}
+		}
+		.d-table {
+			width: 100%;
+			display: table;
+		}
+		.d-valign {
+
+			@media (min-width: $xs){
+				width: 33%;
+			}
+		}
+		.menu-item {
+			padding: 10px 0;
+			@media (min-width: $xs){
+				padding: 10px 25px 10px 0;
+			}
+			p {
+				max-width: 300px;
+				margin-right: auto;
+				margin-left: auto;
+				@media (min-width: $xs){
+					max-width: auto;
+				}
+			}
+		}
+		.ingredients {
+			float: left;
+			font-size: 70%;
+			color: grey;
+			position: relative;
+			top: 4px;
+			@media (min-width: $xs){
+				top: 5px;
+			}
+		}
+		.price {
+			float: right;
+		}
+	}
+	.gallery-section {
+		.gallery-item {
+			width: 50%;
+			display: inline-block;
+			@media (min-width: $xs){
+				width: 25%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

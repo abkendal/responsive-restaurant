@@ -1,0 +1,31 @@
+.module-padding{
+	padding: 45px 20px;
+	@media (min-width: $xs){
+		padding: 60px 20px;
+	}
+}
+.module-padding-top {
+	padding: 45px  20px 0;
+	@media (min-width: $xs){
+		padding: 60px 20px 0;
+	}
+}
+
+.module-padding-bottom {
+	padding: 45px 20px 0;
+	@media (min-width: $xs){
+		padding: 60px 20px 0;
+	}
+}
+
+.secondary-jumbotron {
+	background: url(../assets/header-background.jpg);
+	color: white;
+	background-size: contain;
+	padding-top: 200px;
+	height: 375px;
+	@media (min-width: $xs){
+		padding: 165px 0;
+		height: 330px;
+	}
+}
