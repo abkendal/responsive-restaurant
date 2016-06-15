@@ -207,7 +207,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 70%;
     color: grey;
     position: relative;
-    top: 4px; }
+    top: 5px; }
   .menu .menu-section .price {
     float: right; }
 
@@ -279,6 +279,29 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     float: left; }
   .events .event .event-controls .next-control {
     float: right; }
+
+.contact .contact-section .d-table {
+  width: 100%; }
+
+.contact .contact-section h3 {
+  font-size: 30px;
+  font-weight: bold; }
+
+@media (min-width: 767px) {
+  .contact .contact-section .sub-contact {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top; } }
+
+.contact .contact-section .sub-contact iframe {
+  height: 300px; }
+  @media (min-width: 767px) {
+    .contact .contact-section .sub-contact iframe {
+      height: 340px; } }
+
+@media (min-width: 767px) {
+  .contact .contact-section .contact-content {
+    padding-left: 55px; } }
 
 /*----------------General styles----------------*/
 body {
@@ -392,13 +415,20 @@ header {
   margin-bottom: 0;
   color: white;
   background: url(../assets/home/restaurant-hero-bg.jpg) no-repeat center;
-  padding: 35vh 0 20vh 0;
+  padding: 40vh 0 15vh 0;
   height: 100vh; }
+  @media (min-width: 767px) {
+    .jumbotron {
+      padding: 35vh 0 20vh 0; } }
   .jumbotron h1 {
+    margin-top: 23px;
+    margin-bottom: -11px;
     font-size: 50px; }
     @media (min-width: 767px) {
       .jumbotron h1 {
-        font-size: 72px; } }
+        font-size: 72px;
+        margin-top: 29px;
+        margin-bottom: -20px; } }
   .jumbotron h3::before {
     content: " ";
     width: 25px;
@@ -471,7 +501,10 @@ header {
     margin: 10px 0; }
 
 .specials-container {
-  padding: 30px 40px; }
+  padding: 45px 20px 30px; }
+  @media (min-width: 767px) {
+    .specials-container {
+      padding: 60px 40px 30px; } }
 
 .specials-background {
   min-height: 400px;
@@ -510,18 +543,18 @@ header {
 .cutlery {
   position: relative;
   top: 30px;
-  right: 15px;
   margin: auto; }
 
 /*----------------Reservations styles----------------*/
 .reservations {
   background: url(../assets/header-background.jpg);
-  color: white;
-  padding: 30px; }
+  color: white; }
   .reservations input {
     display: block;
     width: 100%;
     margin-top: 20px; }
+  .reservations h2 {
+    margin-top: 0; }
 
 @media (max-width: 767px) {
   .reservations-container {
@@ -541,8 +574,16 @@ header {
 
 .service-img {
   position: absolute;
-  top: -13px;
+  top: 5px;
   width: 85%; }
+  @media (min-width: 767px) {
+    .service-img {
+      top: -13px; } }
+  .service-img img {
+    width: 90px; }
+    @media (min-width: 767px) {
+      .service-img img {
+        width: inherit; } }
 
 .service-text {
   background: white;
@@ -551,7 +592,10 @@ header {
   .service-text h4 {
     position: absolute;
     bottom: 0;
-    width: 80%; }
+    width: 88%; }
+    @media (min-width: 767px) {
+      .service-text h4 {
+        width: 84%; } }
 
 @media (max-width: 767px) {
   .service-bot {
@@ -559,11 +603,10 @@ header {
 
 @media (max-width: 767px) {
   .service-img-bot {
-    top: 35px; } }
+    top: 55px; } }
 
 /*----------------Welcome styles----------------*/
 .welcome {
-  padding: 50px;
   background: url(../assets/header-background.jpg);
   color: white; }
   .welcome p {

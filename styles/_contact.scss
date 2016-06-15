@@ -1,0 +1,29 @@
+.contact {
+	.contact-section {
+		.d-table {
+			width: 100%;
+		}
+		h3 {
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.sub-contact {
+			@media (min-width: $xs) {
+				width: 50%;
+				display: table-cell;
+				vertical-align: top;
+			}
+			iframe {
+				height: 300px;
+				@media (min-width: $xs) {
+					height: 340px;
+				}
+			}
+		}
+		.contact-content {
+			@media (min-width: $xs) {
+				padding-left: 55px;
+			}
+		}
+	}
+}
