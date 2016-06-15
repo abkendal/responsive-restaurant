@@ -583,7 +583,7 @@ header {
     width: 90px; }
     @media (min-width: 767px) {
       .service-img img {
-        width: inherit; } }
+        width: 126px; } }
 
 .service-text {
   background: white;
